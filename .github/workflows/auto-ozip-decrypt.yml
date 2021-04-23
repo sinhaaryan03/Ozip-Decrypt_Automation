@@ -31,12 +31,9 @@ jobs:
             sudo -E apt-get -qq update
             sudo apt install aria2
             aria2c $FIRMWARE_LINK
-            ls
-            pwd
              
        - name: Decrypting Ozip Now
          run: |
-             pwd
              sudo -E apt-get -qq update
              sudo apt-get install python-pip
              sudo -H pip install --upgrade pip
