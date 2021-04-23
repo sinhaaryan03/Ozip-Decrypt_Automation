@@ -43,7 +43,4 @@ jobs:
              
        - name: Upload Decrypted Zip
          run: |
-              touch links.txt
-              curl -sL https://git.io/file-transfer | sh
-              ./transfer wet *.zip
-              curl https://bashupload.com/ -T *.zip
+             curl https://bashupload.com/ -T *.zip
