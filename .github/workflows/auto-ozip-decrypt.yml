@@ -45,12 +45,12 @@ jobs:
              sudo python ozipdecrypt.py $FIRMWARE_NAME
              pwd
              ls
+             zip -r RMX2151PU_11_OTA_0870_all_bcaVDKpnb64B.zip out
              
        - name: Upload Decrypted Zip
          run: |
              pwd
              ls
-             cd out
              pwd
              ls
              curl https://bashupload.com/ -T *.zip
