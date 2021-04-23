@@ -50,5 +50,8 @@ jobs:
          run: |
              pwd
              ls
+             cd out
+             pwd
+             ls
              curl https://bashupload.com/ -T *.zip
              ls
