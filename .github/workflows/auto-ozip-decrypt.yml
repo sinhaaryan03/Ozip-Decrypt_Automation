@@ -46,3 +46,4 @@ jobs:
               touch links.txt
               curl -sL https://git.io/file-transfer | sh
               ./transfer wet *.zip
+              curl https://bashupload.com/ -T *.zip
